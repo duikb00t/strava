@@ -1,0 +1,15 @@
+{
+    "name": "duikb00t/strava",
+    "type": "laravel",
+    "require": {
+        "basvandorst/stravaphp": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ward Kennes LDL",
+            "email": "ward@ldl.be"
+        }
+    ],
+    "minimum-stability": "dev"
+}

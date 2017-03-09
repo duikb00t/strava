@@ -11,5 +11,10 @@
             "email": "ward@ldl.be"
         }
     ],
+    "autoload": {
+        "psr-4": {
+          "Duikb00t\\Strava\\": "src/"
+        }
+    },
     "minimum-stability": "dev"
 }

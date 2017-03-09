@@ -2,6 +2,7 @@
 
 namespace duikb00t\strava;
 
+use Strava\API\Factory;
 use Illuminate\Support\ServiceProvider;
 
 class StravaServiceProvider extends ServiceProvider
@@ -12,8 +13,9 @@ class StravaServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    {
-        require __DIR__.'/routes/routes.php';
+    {   
+        $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'strava');
     }
 
     /**
@@ -21,8 +23,7 @@ class StravaServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
-        //
+    public function register() {
+        
     }
 }

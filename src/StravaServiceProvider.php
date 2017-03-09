@@ -1,6 +1,7 @@
 <?php
 
-namespace duikb00t\strava;
+namespace Duikb00t\Strava;
+
 
 use Strava\API\Factory;
 use Illuminate\Support\ServiceProvider;

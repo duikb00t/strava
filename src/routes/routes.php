@@ -1,8 +1,9 @@
 <?php
-
 	
-	Route::get('strava', function() {
+Route::group(['namespace' => '\Duikb00t\Strava\Controllers'], function () {
+    Route::get('strava', function() {
 		return view('strava::login');
 	});
 	
-	Route::post('strava', 'Controllers/StravaController@verifyStravaLogin');
+	Route::post('strava', 'StravaController@verifyStravaLogin');
+});

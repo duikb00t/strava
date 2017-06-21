@@ -8,6 +8,7 @@ use Illuminate\Support\ServiceProvider;
 
 class StravaServiceProvider extends ServiceProvider
 {
+
     /**
      * Bootstrap any application services.
      *

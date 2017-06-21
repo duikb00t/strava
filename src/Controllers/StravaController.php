@@ -1,16 +1,22 @@
 <?php
 
+namespace Duikb00t\Strava\Controllers;
 
-namespace App\Http\Controllers;
+class StravaController extends BaseController {
 
-class StravaController extends Controller{
+    /**
+     * TokenController constructor.
+     */
+    public function __construct()
+    {
+        $this->middleware('strava');
+    }
 
 
-	/**
+    /**
 	 * Verify login 
 	 */
 	public function verifyStravaLogin() {
-		return 'Called';
+		return 'Verify login with oatuh stuff';
 	}
-
 }
